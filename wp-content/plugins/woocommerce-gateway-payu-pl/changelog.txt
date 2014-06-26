@@ -1,0 +1,4 @@
+*** WooCommerce PayU Gateway Changelog ***
+
+2013.07.15 - version 1.0
+ * First Release!

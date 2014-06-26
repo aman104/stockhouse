@@ -1,0 +1,1237 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Typography CSS */
+
+img {
+	max-width: 100%;
+}
+
+.read-more {
+    font-size: 16px;
+    margin-top: 13px;
+    text-transform: capitalize;
+	padding-right: 20px;
+	float: left;
+}
+
+.address, .mail, .skype {
+	background: url(../images/footer_icon.png) no-repeat scroll 0 0 transparent;
+	padding-left: 35px;
+	margin-bottom: 10px;
+}
+
+.address {
+	background-position: 0px 5px ;
+}
+
+.mail {
+	background-position: 0px -33px ;
+}
+
+.phone {
+	background: url(../images/footer_icon2.png) no-repeat scroll 0 0 transparent;
+	background-position: 0px -71px ;
+	padding-left: 35px;
+	margin-bottom: 10px;
+}
+
+.skype {
+    background-position: 0 -108px ;
+}
+
+.small {
+    font-size: 13px;
+}
+
+/* Heading CSS Start */
+
+h1, h2, h3, h4 ,h5, h6 {
+	font-weight: normal;
+    margin-bottom: 15px ;
+	
+	line-height: 25px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    display:none;
+}
+
+h5 {
+    font-size: 13px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+/* Heading CSS End */
+
+
+/* Unordered Bullet List CSS Start */
+
+.mj-bullet1 li, .mj-bullet2 li, .mj-bullet3 li, .mj-bullet4 li, .mj-bullet5 li, .mj-bullet6 li ,.mj-bullet7 li  ,.mj-bullet8 li, .mj-bullet9 li  {
+	line-height: 16px;
+    margin: 3px 2px;
+    padding: 2px 0 2px 15px;
+	background:  url(../images/bullets.png) no-repeat scroll 0 0 transparent;
+}
+
+.mj-bullet1 li {
+	background-position: 0 6px;
+}
+
+.mj-bullet2 li {
+	background-position: 0 -64px;
+}
+
+.mj-bullet3 li {
+	background-position: 0 -164px;
+}
+
+.mj-bullet4 li {
+	background-position: 0 -264px;
+}
+
+.mj-bullet5 li {
+	background-position: 0 -365px;
+}
+
+.mj-bullet6 li {
+	background-position: 0 -464px;
+}
+.mj-bullet7 li {
+	background-position: 0 -566px;
+}
+
+.mj-bullet8 li {
+	background-position: 0 -663px;
+}
+.mj-bullet9 li {
+	background-position: 0 -761px;
+}
+.mj-bullet10 li
+{
+	line-height: 16px;
+    list-style: square inside none;
+    margin: 3px 2px;
+    padding: 2px 0 2px 3px;
+
+}
+
+.mj-bullet11 li
+{
+	line-height: 16px;
+    	background:  url(../images/slategray-arrow.png) no-repeat scroll left center transparent;
+    margin: 3px 2px;
+    padding: 2px 0 2px 15px;
+}
+.mj-bullet12 li
+{
+	line-height: 16px;
+    	background:  url(../images/bullets12.png) no-repeat scroll left center transparent;
+    margin: 3px 2px;
+    padding: 2px 0 2px 15px;
+}
+.mj-special1 li, .mj-special2 li, .mj-special3 li, .mj-special4 li, .mj-special5 li, .mj-special6 li,
+.mj-special7 li, .mj-special8 li, .mj-special9 li, .mj-special10 li, .mj-special11 li, .mj-special12 li {
+    line-height: 18px;
+    margin: 3px 2px;
+    padding: 2px 0 5px 25px;
+	background:  url(../images/menu_icons.png) no-repeat scroll 0 0 transparent;
+}
+
+.mj-special1 li {
+	background-position: 0 4px;
+}
+
+.mj-special2 li {
+	background-position: 0 -65px;
+}
+
+.mj-special3 li {
+	background-position: 0 -166px;
+}
+
+.mj-special4 li {
+	background-position: 0 -268px;
+}
+
+.mj-special5 li {
+	background-position: 0 -369px;
+}
+
+.mj-special6 li {
+	background-position: 0 -467px;
+}
+
+.mj-special7 li {
+	background-position: 0 -565px;
+}
+
+.mj-special8 li {
+	background-position: 0 -666px;
+}
+
+.mj-special9 li {
+	background-position: 0 -767px;
+}
+
+.mj-special10 li {
+	background-position: 0 -868px;
+}
+
+.mj-special11 li {
+	background-position: 0 -968px;
+}
+
+.mj-special12 li {
+	background-position: 0 -1068px;
+}
+
+/* Unordered Bullet List CSS End */
+
+/* Ordered List CSS Start */
+
+ol {
+    counter-reset: li;
+}
+
+ol > li:before {
+    background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 1px #CCCCCC;
+    content: counter(li, decimal);
+    counter-increment: li;
+    line-height: 40px;
+    margin-right: 10px;
+    padding: 5px 10px;
+	border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Ordered List CSS End */
+
+/* Inputbox, select and textarea CSS Start */
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea, select {
+    background: url(../images/inputbox.png) repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 3px #C0C0C0 inset;
+    color: #666666;
+    line-height: 20px;
+    margin: 1px 0 3px;
+    min-height: 20px;
+    padding: 4px 5px 3px;
+}
+
+/* Inputbox, select and textarea CSS End */
+
+/* Button CSS Start */
+
+.button, input[type="submit"], input[type="reset"], input[type="button"], .readmore, button {
+    background-image: url("../images/mj-buttons.png");
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 3px 0;
+    padding: 5px 12px;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+	position:relative;
+
+}
+
+a.button, button.button, input.button, #respond input#submit, #content input.button
+{
+    background-image: url("../images/mj-buttons.png") !important;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+     margin: 0 5px 3px 0 !important;
+    padding: 5px 12px !important;
+    text-decoration: none !important;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5) !important;
+	position:relative !important;
+
+
+}
+
+.quantity .plus, .quantity .minus, #content .quantity .plus, #content .quantity .minus
+{
+ background-image: url("../images/mj-buttons.png") !important;
+    border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF !important;
+    cursor: pointer !important;
+	font-size: 14px !important;
+}
+.button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .readmore:hover, button {
+	   background-position: 100% -50px;
+}
+
+.mj-simplebutton {
+    background-color: #EFEFEF;
+    background-image: url(../images/buttons.png);
+    background-repeat: repeat-x;
+    border-color: #C0C0C0 #888888 #888888 #C0C0C0;
+    color: #666666;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 1px;
+	padding: 5px 12px;
+	display: inline-block;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.mj-simplebutton:hover {
+	background-position: 0 -15px;
+}
+
+/* Button CSS End */
+
+/* Module Variation CSS Start */
+
+.mj-dotted h1, .mj-dotted h2, .mj-dotted h3, .mj-dotted h4, .mj-dotted h5, .mj-dotted h6 {
+    background: url(../images/border.png) repeat-x scroll 0 100% transparent ;
+    padding-bottom: 10px;
+}
+
+.mj-strip h1, .mj-strip h2, .mj-strip h3, .mj-strip h4, .mj-strip h5, .mj-strip h6 {
+    background: url(../images/strip.png) repeat-x scroll 0 100% transparent;
+    padding-bottom: 10px;
+}
+#menu-topmenu li a {
+    color: #FFFFFF;
+}
+.mj-whitebox, .mj-darkbox, .mj-colorbox {
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    overflow: hidden;
+
+}
+.mj-whitebox h3, .mj-darkbox h3, .mj-colorbox h3{
+    padding: 10px 3px;
+}
+.mj-whitebox img, .mj-darkbox img, .mj-colorbox img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 15px 0 15px -5px;
+    max-width: 103%;
+    overflow: hidden;
+}
+
+.mj-whitebox {
+    background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #E4E4E4;
+	color: #202020;
+}
+
+.mj-darkbox {
+    box-shadow: 0 0 1px #C0C0C0 inset;
+	 background-color: #f7f7f7;
+
+}
+.mj-darkbox h3 {
+    color: #F0F0F0 !important;
+background-color:#404040 !important;
+}
+
+.mj-colorbox {
+	  box-shadow: 0 0 1px #C0C0C0 inset;
+ background-color: #f7f7f7;
+}
+
+.mj-colorbox h3 {
+	color: #FFFFFF !important;
+}
+.mj-darkbox > p , .mj-colorbox >p , .mj-whitebox>p {
+    padding: 0 5px;
+}
+.mj-whitebox .mj-whitebox, .mj-darkbox .mj-darkbox, .mj-colorbox .mj-colorbox {
+    border: medium none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mj-download h3, .mj-twitter h3, .mj-mail h3,
+.mj-bubble h3, .mj-login h3, .mj-cart h3 {
+    background: url(../images/module_icons.png) no-repeat scroll 0 0 transparent;
+    padding-left: 35px;
+	 margin-top: 10px;
+    padding-bottom: 10px;
+	line-height: 16px;
+	  padding-top: 5px;
+}
+
+.mj-download h3 {
+	background-position: 0 0;
+}
+
+.mj-twitter h3 {
+	background-position: 0 -35px;
+}
+
+.mj-mail h3 {
+	background-position: 0 -60px;
+}
+
+.mj-bubble h3 {
+	background-position: 0 -88px;
+}
+
+.mj-login h3 {
+	background-position: 0 -120px;
+}
+
+.mj-cart h3 {
+	background-position: 0 -152px;
+}
+
+/* Module Variation CSS End */
+
+/* Table CSS Start */
+
+table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+    border: 1px solid #C1C1C1;
+	width: 100%;
+}
+
+table td, table th {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	border: none;
+}
+
+table th {
+    font-size: 14px !important;
+	border-bottom: 1px solid #C1C1C1;
+	padding: 10px 5px;
+}
+
+table td {
+    font-size: 13px;
+	border-bottom: 1px solid #C1C1C1;
+	padding: 5px;
+}
+
+tr:first-child {
+    background-color: #CCCCCC;
+}
+
+tr:nth-child(2n) /*For Even no. of columns */ {
+    background-color: #FAFAFA;
+}
+
+tr:nth-child(2n+1) /*For Odd no. of columns */ {
+    background-color: #EFEFEF;
+}
+
+/* Table CSS End */
+
+/* Box Content CSS Start */
+
+.mj-boxcontent, .mj-boxnote, .mj-boxinfo, .mj-boxwarning, .mj-boxhint, .mj-boxdownload {
+	padding: 10px;
+	margin: 10px 0;
+	text-align: justify;
+}
+
+.mj-boxinfo, .mj-boxwarning, .mj-boxhint, .mj-boxdownload {
+	box-shadow: 0 -1px 2px #FFFFFF inset;
+	padding-left: 40px;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 5px 5px;
+}
+.mj-boxcontent {
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.mj-simpleboxcontent {
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	padding:10px 10px 10px 10px;
+}
+
+.mj-boxnote {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+
+}
+
+.mj-boxinfo {
+    background: url(../images/box_info.png) no-repeat scroll 10px center #CED9E5;
+    border-color: #A9C3DB;
+    color: #384656;
+    text-shadow: 0 1px #F5F8F9;
+}
+
+.mj-boxwarning {
+    background: url(../images/box_warning.png) no-repeat scroll 10px center #F2B3B3;
+    border-color: #EC9494;
+    color: #632828;
+    text-shadow: 0 1px #EFD5D5;
+}
+
+.mj-boxhint {
+    background: url(../images/box_hint.png) no-repeat scroll 10px center #FEE9C5;
+    border-color: #FFCA77;
+    color: #7A4B04;
+    text-shadow: 0 1px #FEFCEA;
+}
+
+.mj-boxdownload {
+    background: url(../images/box_download.png) no-repeat scroll 10px center #EAF2D2;
+    border-color: #B4D264;
+    color: #393F34;
+    text-shadow: 0 1px #FFFFFF;
+}
+
+/* Box Content CSS End */
+
+/* Simple Top Menu CSS Start */
+
+ul.menu li {
+    position: relative;
+}
+
+ul.menu li ul, ul.menu li li ul {
+    display: none;
+	position: absolute;
+	width: 190px;
+	background-color: #E9EFF6;
+	z-index: 999999;
+}
+
+ul.menu li ul {
+	left: 0px;
+	top: 30px;
+}
+
+ul.menu li:hover ul {
+    display: block;
+}
+
+ul.menu li li {
+	float: none !important;
+	border-top: 1px solid #848689;
+	border-bottom: 0 none !important;
+	padding: 8px 10px 8px 0px !important;
+}
+
+ul.menu li li a {
+	color: #404040 !important;
+	font-size: 14px !important;
+	display: block;
+	border-right: medium none !important;
+}
+
+ul.menu li li ul {
+	left: 190px;
+	top: 0;
+}
+
+ul.menu li:hover li ul {
+	display: none;
+}
+
+ul.menu li li:hover ul {
+    display: block;
+}
+
+ul.menu li li:hover, ul.menu li li.active {
+    background-color: #FFFFFF;
+}
+
+
+
+
+ul.menu li li:hover li a, ul.menu li li.active li a {
+	color: #404040 !important;
+}
+
+
+ul.menu li li.parent a {
+    background: url(../images/menu_arrow/arrow1.png) no-repeat scroll right center transparent;
+}
+
+
+
+ul.menu li li.parent li a, ul.menu li li.parent:hover li a, ul.menu li li.parent.active li a {
+    background: none;
+}
+
+/* Simple Top Menu CSS End */
+
+/* Left/Right Menu CSS Start */
+
+#mj-left ul.menu, #mj-right ul.menu {
+	border: 1px solid #BFBFBF;
+}
+
+#mj-left ul.menu li, #mj-right ul.menu li {
+	border-bottom: 1px solid #BFBFBF;
+	padding: 0px !important;
+}
+
+#mj-left ul.menu li a, #mj-right ul.menu li a {
+    color: #404040;
+    display: block;
+    padding: 10px;
+}
+
+
+
+#mj-left ul.menu li ul, #mj-left ul.menu li li ul,
+#mj-right ul.menu li ul, #mj-right ul.menu li li ul {
+    width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+}
+
+#mj-left ul.menu li li, #mj-right ul.menu li li {
+    font-size: 12px;
+	background: url(../images/menu_shadow.png) repeat-x scroll 0 0 transparent;
+}
+
+#mj-left ul.menu li li a, #mj-right ul.menu li li a {
+	font-size: 12px;
+	padding: 5px 5px 5px 15px;
+}
+
+#mj-left ul.menu li li:first-child, #mj-right ul.menu li li:first-child {
+    border-top: 1px solid #848689;
+}
+
+#mj-left ul.menu li li li a, #mj-right ul.menu li li li a {
+	padding-left: 25px !important;
+}
+
+#mj-left ul.menu li.parent a, #mj-left ul.menu li.parent li.parent a,
+#mj-left ul.menu li.parent:hover li.parent a,
+#mj-right ul.menu li.parent a, #mj-right ul.menu li.parent li.parent a,
+#mj-right ul.menu li.parent:hover li.parent a {
+	background: url(../images/menu_arrow/arrow1.png) no-repeat scroll right center transparent;
+	margin-right: 10px;
+}
+
+#mj-left ul.menu li.parent:hover a, #mj-left ul.menu li.parent li.parent:hover a,
+#mj-right ul.menu li.parent:hover a, #mj-right ul.menu li.parent li.parent:hover a {
+	background: url(../images/menu_arrow/arrow2.png) no-repeat scroll right center transparent;
+}
+
+
+
+#mj-left ul.menu li.parent li a, #mj-left ul.menu li.parent li.parent li a,
+#mj-left ul.menu li.parent li.parent:hover li a, #mj-left ul.menu li.parent:hover li a,
+#mj-left ul.menu li.parent.active li a, #mj-left ul.menu li.parent.active li.parent li a,
+#mj-left ul.menu li.parent.active li.parent:hover li a, #mj-left ul.menu li.parent.active:hover li a,
+#mj-right ul.menu li.parent li a, #mj-right ul.menu li.parent li.parent li a,
+#mj-right ul.menu li.parent li.parent:hover li a, #mj-right ul.menu li.parent:hover li a,
+#mj-right ul.menu li.parent.active li a, #mj-right ul.menu li.parent.active li.parent li a,
+#mj-right ul.menu li.parent.active li.parent:hover li a, #mj-right ul.menu li.parent.active:hover li a
+{
+	background: none;
+}
+    
+/* Left/Right Menu CSS End */
+
+/* mj-simple Menu CSS Start */
+
+.mj-simplemenu ul.menu {
+    border: medium none !important;
+}
+
+.mj-simplemenu ul.menu li {
+    background: url(../images/border.png) repeat-x scroll left bottom transparent;
+    border: medium none !important;
+}
+
+.mj-simplemenu ul.menu li a {
+    padding-left: 0 !important;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.mj-simplemenu ul.menu li li {
+    background: url(../images/border.png) repeat-x scroll left bottom transparent !important;
+}
+
+.mj-simplemenu ul.menu li li a {
+    margin-right: 0 !important;
+    padding-left: 10px !important;
+}
+/* mj-simple Menu CSS End */
+
+/* Blog CSS Start */
+
+.blog h2 {
+
+}
+
+.blog img {
+	background: none repeat scroll 0 0 #FFFFFF;
+/*    border: 1px solid #CCCCCC; */
+    margin-bottom: 10px;
+    max-width: 98%;
+}
+
+.cols-2 .column-1, .cols-2 .column-2,
+.cols-3 .column-1, .cols-3 .column-2, .cols-3 .column-3,
+.cols-4 .column-1, .cols-4 .column-2, .cols-4 .column-3, .cols-4 .column-4 {
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.cols-2 .column-1, .cols-2 .column-2 {
+    width: 48%;
+}
+
+.cols-3 .column-1, .blog .cols-3 .column-2, .cols-3 .column-3 {
+    width: 30%;
+}
+
+.cols-4 .column-1, .cols-4 .column-2, .cols-4 .column-3, .cols-4 .column-4 {
+    width: 23%;
+}
+
+/* Blog CSS End */
+
+/* Breadcrumbs CSS Start */
+
+.breadcrumbs .pathway, .breadcrumbs span {
+    padding: 10px 20px 10px 5px;
+	display: inline-block;
+}
+
+.breadcrumbs .pathway {
+		background: url(../images/breadcrumb_sep.png) no-repeat scroll top right transparent;
+		padding-left:0;
+}
+
+.breadcrumbs img {
+	display: none;
+}
+
+/* Breadcrumbs CSS End */
+
+/* pagination CSS start */
+
+.pagination
+{
+	float:left;
+	width:100%;
+}
+
+.pagination p
+{
+	text-align: center;
+}
+
+.pagination ul
+{
+	float: right;
+    padding-top: 10px;
+    width: 65%;
+}
+
+.pagination li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 2px;
+    padding: 3px 9px;
+	float:left;
+}
+
+/* pagination CSS End */
+
+.readmore a {
+	color: #FFFFFF;
+}
+
+/* Category List CSS Start */
+.categories-list li {
+    background: url(../images/bullets.png) no-repeat scroll 0 -19px transparent;
+    float: left;
+    line-height: 16px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.categories-list dt {
+    display: none;
+}
+
+.categories-list dd {
+    float: left;
+}
+
+.categories-list .item-title a {
+    float: left;
+	padding-right: 5px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.hidelabeltxt {
+	display: none;
+}
+
+.weblink-category .title img {
+	float: left;
+	margin-right: 5px;
+}
+/* Category List CSS End */
+
+/* Contact CSS Start */
+.contact input[type="text"], .contact input[type="email"] {
+	width: 250px;
+	color: #666666;
+	height: 20px;
+}
+.contact legend 
+{
+    font-family: 'Open Sans',sans-serif !important;
+    padding-bottom: 10px !important;
+}
+
+.contact textarea {
+	color: #666666;
+}
+
+.contact label {
+    float: left;
+    margin: 1px 0;
+    width: 150px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.contact span.jicons-text {
+	font-weight: bold;
+}
+
+.contact h3 {
+	margin-bottom: 0 !important;
+	margin-top: 5px;
+}
+
+/* Contact CSS End */
+
+/* Login CSS Start */
+
+.login {
+	margin-bottom: 5px;
+}
+
+.login .login-fields {
+    margin: 7px 0;
+}
+
+.login label {
+    display: inline-block;
+    width: 130px;
+}
+
+.registration label, .remind label, .reset label {
+    float: left;
+    width: 180px;
+}
+
+.registration dt, .registration dd {
+    margin: 5px 0;
+}
+
+.remind label, .reset label {
+	margin: 5px 0;
+}
+
+.remind dl, .reset dl {
+	margin: 20px 0;
+}
+
+/* Login CSS End */
+
+.moduletable {
+	margin-bottom: 10px;
+}
+#mj-left .moduletable
+{
+	padding-top:0px;
+}
+#mj-right .moduletable
+{
+	padding-top:0px;
+}
+
+#mj-maincontent #mj-right .moduletable
+{
+	padding-top:0;
+}
+
+
+.moduletable h3 {
+	font-size: 20px;
+	font-family: PT Sans,sans-serif;
+
+}
+#mj-left .moduletable h3 {
+	font-size: 20px;
+}
+
+p {
+	margin-bottom: 7px;
+}
+p.dropcap
+	{
+		padding-bottom:10px;
+	}
+
+.item-page h1 {
+background: url(../images/strip.png) repeat-x scroll 0 100% transparent;
+padding-bottom: 10px;
+}
+
+.mj-Block 
+{
+    display: block;
+    margin: 5px 0 20px;
+}
+
+.mj-event-time, .mj-block-number 
+{
+    border-style: solid;
+    color: #444444 !important;
+    text-shadow: 0 1px #FFFFFF;
+}
+.mj-event-time, .mj-block-number 
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../images/bg-white-large.png") repeat-x scroll 0 0 #F2F2F2;
+    border-color: #C0C0C0 #888888 #888888 #C0C0C0;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 -1px 1px #FFFFFF inset;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0 15px 0 0;
+    padding-top: 7px;
+    text-shadow: 0 1px #FFFFFF;
+}
+.mj-event-time .mj-date, .mj-block-number .mj-digit 
+{
+    font-size: 18px;
+    line-height: 1;
+    padding: 9px 10px 25px;
+}
+.mj-block-number .mj-bottom 
+{
+    height: 6px;
+}
+.mj-event-time .mj-month, .mj-block-number .mj-bottom 
+{
+    border-radius: 0 0 3px 3px;
+    border-style: solid;
+    border-width: 1px 0 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.mj-event, .mj-Block {
+    display: block;
+    margin: 5px 0 20px;
+}	
+
+
+.mj-whitebutton {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(204, 204, 204, 0.3);
+    color: #444444;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 3px 12px;
+}
+.item-page h2 {
+    background: url("../images/strip.png") repeat-x scroll 0 100% transparent;
+    padding-bottom: 10px;
+}
+
+.mj-grid48 > h1 
+{
+    background: none repeat scroll 0 0 transparent;
+}
+.mj-grid48 > h2 
+{
+    background: none repeat scroll 0 0 transparent;
+}
+.entry-content .mj-grid48 > h3 {
+    line-height: 1;
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px) 
+{
+	.wpcf7-form-control.wpcf7-submit
+	{
+		left:35.5% !important;
+		position:relative;
+	}
+}
+@media screen and (max-width: 480px) 
+{
+	.wpcf7-form-control.wpcf7-submit
+	{
+		left:0% !important;
+		position:relative;
+	}
+	.mj-simpleboxcontent
+	{
+		padding-bottom:25px !important;
+	}
+	.mj-boxnote
+	{
+		padding-bottom:23px !important;
+	}
+	
+}
+
+
+#mj-left ul.nav1, #mj-right ul.nav1 {
+	border: 1px solid #BFBFBF;
+}
+
+#mj-left ul.nav1 li, #mj-right ul.nav1 li {
+	border-bottom: 1px solid #BFBFBF;
+	padding: 0px !important;
+}
+
+#mj-left ul.nav1 li a, #mj-right ul.nav1 li a {
+    color: #404040;
+    display: block;
+    padding: 10px;
+	margin-right: 10px;
+
+}
+
+
+
+#mj-left ul.nav1 li ul, #mj-left ul.nav1 li li ul,
+#mj-right ul.nav1 li ul, #mj-right ul.nav1 li li ul {
+    width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+}
+
+.nav1 ul.sub-menu li li, .nav1 ul.sub-menu li  
+{
+    font-size: 14px;
+	background: url(../images/menu_shadow.png) repeat scroll 0 0 transparent;
+}
+
+#mj-left ul.nav1 li li a, #mj-right ul.nav1 li li a {
+	font-size: 12px;
+	padding: 5px 5px 5px 15px;
+}
+
+#mj-left ul.nav1 li li:first-child, #mj-right ul.nav1 li li:first-child {
+    border-top: 1px solid #848689;
+}
+
+#mj-left ul.nav1 li li li a, #mj-right ul.nav1 li li li a {
+	padding-left: 25px !important;
+}
+
+
+
+
+#mj-left ul.nav1 li.sub-menu li a, #mj-left ul.nav1 li.sub-menu li.sub-menu li a,
+#mj-left ul.nav1 li.sub-menu li.sub-menu:hover li a, #mj-left ul.nav1 li.sub-menu:hover li a,
+#mj-left ul.nav1 li.sub-menu.active li a, #mj-left ul.nav1 li.sub-menu.active li.sub-menu li a,
+#mj-left ul.nav1 li.sub-menu.active li.sub-menu:hover li a, #mj-left ul.nav1 li.sub-menu.active:hover li a
+{
+	background: none;
+}
+
+
+.mj-dotted h1, .mj-dotted h2, .mj-dotted h3, 
+.mj-dotted h4, .mj-dotted h5, .mj-dotted h6, 
+h1.mj-dotted, h2.mj-dotted, h3.mj-dotted, 
+h4.mj-dotted, h5.mj-dotted, h6.mj-dotted
+{
+	background: url("../images/border.png") repeat-x scroll 0 100% transparent ;
+    padding-bottom: 15px;
+	margin-bottom:15px; 
+	text-transform:none;
+	
+	
+}
+#mj-footer .mj-dotted h1,#mj-footer .mj-dotted h2,#mj-footer .mj-dotted h3, 
+#mj-footer .mj-dotted h4,#mj-footer  .mj-dotted h5, #mj-footer .mj-dotted h6, 
+#mj-footer h1.mj-dotted, #mj-footer h2.mj-dotted,#mj-footer h3.mj-dotted, 
+#mj-footer h4.mj-dotted, #mj-footer h5.mj-dotted, #mj-footer h6.mj-dotted 
+{
+
+/*font-family: oswald;*/
+font-family: "calluna-sans",sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+p.mj-dropcap:first-letter 
+{
+    display: block;
+    float: left;
+    font-size: 280%;
+    margin: 7px 4px 0 0;
+}
+
+
+
+.item-page h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 15px !important;
+}
+
+.mj-strip h1, .mj-strip h2, .mj-strip h3, .mj-strip h4, .mj-strip h5, .mj-strip h6 {
+    margin-bottom: 15px !important;
+    padding-bottom: 15px !important;
+	/*font-family:oswald;*/
+	font-family: "calluna-sans",sans-serif;
+font-style: normal;
+font-weight: 400;
+	text-transform:uppercase;
+}
+
+.mj-simplemenu ul.menu {
+    border: medium none !important;
+}
+
+.mj-simplemenu ul.menu li {
+    background: url(../images/border.png) repeat-x scroll left bottom transparent;
+    border: medium none !important;
+}
+
+.mj-simplemenu ul.menu li a {
+    padding-left: 0 !important;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.mj-simplemenu ul.menu li li {
+    background: url(../images/border.png) repeat-x scroll left bottom transparent !important;
+}
+
+.mj-simplemenu ul.menu li li a {
+    margin-right: 0 !important;
+    padding-left: 10px !important;
+}
+
+.mj-simplemenu ul.menu li ul.sub-menu
+{
+ border-top:none !important;
+ margin-top: 0 !important;
+}
+
+.mj-simplemenu ul.menu li ul.sub-menu li a
+{
+font-size:12px !important;
+}
+.menu li.current-menu-parent a, .menu li.current-menu-item a {
+    color: #1a5da2 !important;
+}
+
+#mj-left ul.menu li:hover a, #mj-left ul.menu li.active a, #mj-right ul.menu li:hover a, #mj-right ul.menu li.active a {
+    color:  #1a5da2 ;
+}
+
+.breadcrumbs .spnd {
+    display: inline-block;
+    padding: 10px 20px 10px 5px;
+}
+
+.entry-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+p.mj-dropcap:first-letter {
+    display: block;
+    float: left;
+    font-size: 300%;
+    margin: 7px 4px 0 0;
+}
+.reviews_tab ,.description_tab  , .attributes_tab
+{
+ background:none !important;
+}
+div.product .woocommerce_tabs ul.tabs li:before, div.product .woocommerce_tabs ul.tabs li:after, #content div.product .woocommerce_tabs ul.tabs li:before, #content div.product .woocommerce_tabs ul.tabs li:after
+{
+ content:inherit !important;
+}
+ .woocommerce_tabs ul.tabs li, #content  .woocommerce_tabs ul.tabs li
+{ 
+margin: 0 auto !important;
+}
+#shipping_country
+{
+ clear:both;
+}
+a.button.loading:before, button.button.loading:before, input.button.loading:before, #respond input#submit.loading:before, #content input.button.loading:before
+{
+ background:none !important;
+}
+div.product .woocommerce_tabs ul.tabs li:after, #content div.product .woocommerce_tabs ul.tabs li:after
+{
+ border:none !important;
+ box-shadow:none !important;
+}
+div.product .woocommerce_tabs ul.tabs li:before, div.product .woocommerce_tabs ul.tabs li:after, #content div.product .woocommerce_tabs ul.tabs li:before, #content div.product .woocommerce_tabs ul.tabs li:after
+{
+
+  width: auto !important;
+
+}
+
+#main .wk-twitter.wk-twitter-list {
+    background-color: #f7f7f7;
+	border:1px solid #e4e4e4;
+}

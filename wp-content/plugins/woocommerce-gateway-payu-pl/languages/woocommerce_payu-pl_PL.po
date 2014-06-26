@@ -1,0 +1,290 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce PayU Gateway v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-12 13:46+0100\n"
+"PO-Revision-Date: 2013-07-12 11:50:47+0000\n"
+"Last-Translator: Maciek Swoboda <maciek@uhuru.pl>\n"
+"Language-Team: Inspire Labs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: /Users/maciek/Webmaster/SVN/wooinvoice/wordpress\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: wp-content/plugins/woocommerce-gateway-payu-pl\n"
+"X-Textdomain-Support: yes"
+
+#: classes/payu.class.php:39
+#: classes/payu.class.php:98
+#: classes/payu.class.php:173
+#@ woocommerce_payu
+msgid "PayU"
+msgstr ""
+
+#: classes/payu.class.php:89
+#@ woocommerce_payu
+msgid "Enable/Disable"
+msgstr "Włącz/Wyłącz"
+
+#: classes/payu.class.php:91
+#@ woocommerce_payu
+msgid "Enable PayU"
+msgstr "Włącz PayU"
+
+#: classes/payu.class.php:95
+#@ woocommerce
+msgid "Title"
+msgstr "Tytuł"
+
+#: classes/payu.class.php:97
+#@ woocommerce_payu
+msgid "This controls the title which the user sees during checkout."
+msgstr "Nazwa bramki płatności, którą klient widzi przy składaniu zamówienia."
+
+#: classes/payu.class.php:101
+#@ woocommerce_payu
+msgid "Description"
+msgstr "Opis"
+
+#: classes/payu.class.php:103
+#@ woocommerce_payu
+msgid "This controls the description which the user sees during checkout."
+msgstr "Opis bramki płatności, którą klient widzi przy składaniu zamówienia."
+
+#: classes/payu.class.php:104
+#@ woocommerce_payu
+msgid "Direct payment via PayU"
+msgstr "Płatność przez PayU"
+
+#: classes/payu.class.php:107
+#@ woocommerce_payu
+msgid "Id punktu płatności (pos_id)"
+msgstr ""
+
+#: classes/payu.class.php:109
+#@ woocommerce_payu
+msgid "Please enter your pos_id number; this number should be provided by PayU during registration!"
+msgstr "Wpisz identyfikator pos w systemie PayU, uzyskany podczas tworzenia punktu płatności."
+
+#: classes/payu.class.php:113
+#@ woocommerce_payu
+msgid "Klucz (MD5)"
+msgstr ""
+
+#: classes/payu.class.php:115
+#@ woocommerce_payu
+msgid "Please enter your MD5 key number; this number should be provided by PayU during registration!"
+msgstr "Wpisz klucz MD5 w systemie PayU, uzyskany podczas tworzenia punktu płatności."
+
+#: classes/payu.class.php:119
+#@ woocommerce_payu
+msgid "Drugi klucz (MD5)"
+msgstr ""
+
+#: classes/payu.class.php:121
+#@ woocommerce_payu
+msgid "Please enter your second MD5 key number; this number should be provided by PayU during registration!"
+msgstr "Wpisz drugi klucz MD5 w systemie PayU, uzyskany podczas tworzenia punktu płatności."
+
+#: classes/payu.class.php:125
+#@ woocommerce_payu
+msgid "Klucz autoryzacji płatności (pos_auth_key)"
+msgstr ""
+
+#: classes/payu.class.php:127
+#@ woocommerce_payu
+msgid "Please enter your POS auth key; this number should be provided by PayU during registration!"
+msgstr "Wpisz klucz pos_auth_key w systemie PayU, uzyskany podczas tworzenia punktu płatności."
+
+#: classes/payu.class.php:131
+#@ woocommerce_payu
+msgid "Podpis sig"
+msgstr ""
+
+#: classes/payu.class.php:133
+#@ woocommerce_payu
+msgid "Zabezpieczaj moje transakcje/Sprawdzaj poprawność sig-a"
+msgstr ""
+
+#: classes/payu.class.php:134
+#@ woocommerce_payu
+msgid "Sig to ciąg znaków pełniący rolę podpisu cyfrowego. Weryfikacja poprawności sig-a zwiększa bezpieczeństwo transakcji."
+msgstr ""
+
+#: classes/payu.class.php:139
+#@ woocommerce_payu
+msgid "Test Mode"
+msgstr "Tryb testowy"
+
+#: classes/payu.class.php:141
+#@ woocommerce_payu
+msgid "Enable Test Mode"
+msgstr "Włącz tryb testowy"
+
+#: classes/payu.class.php:142
+#@ woocommerce_payu
+msgid "This is just to test your account information. No payment will be made."
+msgstr "Używany wyłącznie w celu przetestowania bramki płatności. Żadne płatności nie będą zrealizowane."
+
+#: classes/payu.class.php:174
+#@ woocommerce_payu
+msgid "PayU works by sending the user to <a href=\"https://secure.payu.com//\">PayU</a> to enter their payment information. Note that PayU will only take payments in Polish Złoty."
+msgstr "Bramka płatności wysyła klienta na stronę <a href=\"http://payu.pl/\">PayU</a> w celu dokonania płatności. PayU realizują wyłącznie płatności w Polskich Złotych."
+
+#: classes/payu.class.php:187
+#@ woocommerce_payu
+msgid "Gateway Disabled"
+msgstr "Bramka wyłączona"
+
+#: classes/payu.class.php:187
+#, php-format
+#@ woocommerce_payu
+msgid "Choose Polish Złoty as your store currency in <a href=\"%s\">Pricing Options</a> to enable the PayU Gateway."
+msgstr "Wybierz walutę \\\"Polski Złoty\\\" w <a href=\"%s\">ustawieniach sklepu</a>, aby włączyć bramkę PayU."
+
+#: classes/payu.class.php:271
+#, php-format
+#@ woocommerce_payu
+msgid "Order # %s from "
+msgstr "Zamówienie # %s od "
+
+#: classes/payu.class.php:309
+#@ woocommerce_payu
+msgid "Pay via PayU"
+msgstr "Zapłać przez PayU"
+
+#: classes/payu.class.php:309
+#@ woocommerce_payu
+msgid "Cancel order &amp; restore cart"
+msgstr "Anuluj zamówienie i przywróc koszyk"
+
+#: classes/payu.class.php:314
+#@ woocommerce_payu
+msgid "Thank you for your order. We are now redirecting you to PayU to make payment."
+msgstr "Dziękujemy za złożenie zamówienia. Przekierujemy Cię na stronę PayU w celu dokonania płatności."
+
+#: classes/payu.class.php:359
+#@ woocommerce_payu
+msgid "Thank you for your order, please click the button below to pay with PayU."
+msgstr "Dziękujemy za zamówienie, kliknij przycisk poniżej, aby zapłacić przez PayU."
+
+#: classes/payu.class.php:505
+#@ woocommerce_payu
+msgid "Brak lub błędna wartość parametru POS_ID"
+msgstr ""
+
+#: classes/payu.class.php:509
+#@ woocommerce_payu
+msgid "Brak parametru SESSION_ID"
+msgstr ""
+
+#: classes/payu.class.php:513
+#@ woocommerce_payu
+msgid "Brak parametru TS"
+msgstr ""
+
+#: classes/payu.class.php:517
+#@ woocommerce_payu
+msgid "Brak lub błędna wartość parametru SIG"
+msgstr ""
+
+#: classes/payu.class.php:521
+#: classes/payu.class.php:525
+#: classes/payu.class.php:529
+#: classes/payu.class.php:533
+#: classes/payu.class.php:537
+#: classes/payu.class.php:541
+#: classes/payu.class.php:545
+#: classes/payu.class.php:549
+#: classes/payu.class.php:557
+#: classes/payu.class.php:561
+#@ woocommerce_payu
+msgid "Brak parametru"
+msgstr ""
+
+#: classes/payu.class.php:553
+#@ woocommerce_payu
+msgid "Błędny numer konta bankowego"
+msgstr ""
+
+#: classes/payu.class.php:565
+#@ woocommerce_payu
+msgid "Chwilowy błąd PayU"
+msgstr ""
+
+#: classes/payu.class.php:569
+#@ woocommerce_payu
+msgid "Chwilowy błąd PayU, bazy danych"
+msgstr ""
+
+#: classes/payu.class.php:573
+#@ woocommerce_payu
+msgid "POS jest zablokowany"
+msgstr ""
+
+#: classes/payu.class.php:577
+#: classes/payu.class.php:581
+#: classes/payu.class.php:585
+#: classes/payu.class.php:589
+#: classes/payu.class.php:593
+#: classes/payu.class.php:597
+#: classes/payu.class.php:601
+#: classes/payu.class.php:605
+#: classes/payu.class.php:609
+#: classes/payu.class.php:613
+#: classes/payu.class.php:617
+#: classes/payu.class.php:621
+#: classes/payu.class.php:625
+#: classes/payu.class.php:629
+#: classes/payu.class.php:633
+#@ woocommerce_payu
+msgid "Błąd"
+msgstr ""
+
+#: classes/payu.class.php:637
+#@ woocommerce_payu
+msgid "Wrong status - we ask user to contact us"
+msgstr "Błędny status"
+
+#. translators: plugin header field 'Name'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "WooCommerce PayU Gateway"
+msgstr "WooCommerce - Bramka Płatności PayU"
+
+#. translators: plugin header field 'PluginURI'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "http://www.wpdesk.pl/sklep/payu-woocommerce/"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "Extends WooCommerce. Provides a <a href=\"http://payu.pl\" target=\"_blank\">PayU</a> gateway for WooCommerce."
+msgstr "Umożliwia pobieranie płatności przez system PayU."
+
+#. translators: plugin header field 'Author'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "Inspire Labs"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "http://www.inspirelabs.pl/"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: gateway-payu.php:0
+#@ woocommerce_payu
+msgid "1.0"
+msgstr ""
+

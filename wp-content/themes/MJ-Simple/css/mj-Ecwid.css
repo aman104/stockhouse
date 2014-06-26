@@ -1,0 +1,425 @@
+/*
+* @package mj_simple
+* @copyright (C) 2012 by Dasinfomedia - All rights reserved!
+*/
+
+/* Ecwid CSS*/
+
+
+html#ecwid_html body#ecwid_body .ecwid , .ecwid 
+{
+	font-family: 'PT Sans',sans-serif !important;
+	font-size: 13px !important;
+	color: #404040 !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-subcategories-categoryName , .ecwid-productBrowser-subcategories-categoryName
+{
+	font-family: 'PT Sans',sans-serif !important;
+	font-size: 15px !important;
+	
+}
+
+html#ecwid_html body#ecwid_body span.ecwid-categories-category , .ecwid-categories-category
+{
+font-size:15px !important;	
+}
+.ecwid-ProductBrowser-auth-anonim .gwt-Anchor
+{
+    border-radius: 3px 3px 3px 3px !important;
+    color: #FFFFFF !important;
+    padding: 7px !important;
+    text-decoration: none !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-categories table, .ecwid-categories-vertical-table
+{
+	width:100% !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-sku,.ecwid-productBrowser-sku
+{
+	text-align: center !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink, .ecwid-productBrowser-productNameLink
+{
+	text-align: center !important;
+	margin-bottom:6px !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-pager span.ecwid-pager-link-enabled ,html#ecwid_html body#ecwid_body div.ecwid-pager span.ecwid-pager-link-disabled,.ecwid-pager span.ecwid-pager-link-enabled ,html#ecwid_html body#ecwid_body div.ecwid-pager span.ecwid-pager-link-disabled ,  div.ecwid-pager span.ecwid-pager-link-enabled ,  div.ecwid-pager span.ecwid-pager-link-disabled,div.ecwid-pager span.ecwid-pager-link-disabled
+
+{
+    background: none repeat scroll 0 0 #FFFFFF !important;
+    margin: 0 2px !important;
+    padding: 3px 9px !important;
+}
+html#ecwid_html body#ecwid_body .ecwid li , .ecwid li {
+    background: url(../images/bullets.png) no-repeat scroll 0 0 transparent !important;
+    line-height: 16px !important;
+    margin: 3px 2px !important;
+    padding: 2px 0 2px 15px !important;
+	 background-position: 0 -365px !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid ul , .ecwid ul{
+    list-style: none outside none !important;
+}
+
+html#ecwid_html body#ecwid_body td.ecwid-productBrowser-cart-itemsTable-headerCell , td.ecwid-productBrowser-cart-itemsTable-headerCell
+{
+	padding:6px 20px !important;
+	color:#fff !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-subtotalLabel, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-shippingLabel, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-taxLabel , .ecwid-productBrowser-cart-subtotalLabel ,.ecwid-productBrowser-cart-shippingLabel , .ecwid-productBrowser-cart-taxLabel
+{
+	font-family: 'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a:active, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a:visited , .ecwid-productBrowser-productNameLink a , .ecwid-productBrowser-productNameLink a:active , .ecwid-productBrowser-productNameLink a:visited
+{
+	font:15px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a:active, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a:visited ,.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a ,
+.ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a:active , .ecwid-productBrowser-productsGrid-productBottomFragment div.ecwid-productBrowser-productNameLink a:visited 
+{
+	font:15px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-price , .ecwid-productBrowser-price
+{
+	font:18px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsList-descr , .ecwid-productBrowser-productsList-descr
+{
+	font:14px 'PT Sans',sans-serif !important;
+}
+
+
+/*.ecwid-productBrowser-head
+{
+background: url(../images/strip.png) repeat-x scroll 0 100% transparent !important;	
+margin-top: -25px !important;
+    padding-bottom: 10px !important;
+}
+*/
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowser-auth-anonim, html#ecwid_html body#ecwid_body div.ecwid-ProductBrowser-auth-logged , .ecwid-ProductBrowser-auth-anonim , .ecwid-ProductBrowser-auth-logged
+
+ {
+    margin-right: 0 !important;
+    top: 2px !important;
+}
+
+/*html#ecwid_html body#ecwid_body div.ecwid-AddToBagButton-up, html#ecwid_html body#ecwid_body div.ecwid-AddToBagButton-up-hovering, html#ecwid_html body#ecwid_body div.ecwid-AddToBagButton-ie6-up, html#ecwid_html body#ecwid_body div.ecwid-AddToBagButton-ie6-up-hovering
+{
+	background: url(../images/cart-button.png) no-repeat scroll center top transparent !important;
+	height: 44px!important;
+}
+*/
+
+html#ecwid_html body#ecwid_body td.ecwid-categories-vertical-table-cell table.ecwid-categories-vertical-table-cell-categoryLink , .ecwid-categories-vertical-table-cell-categoryLink 
+
+{
+margin: 10px 0px !important;	
+	
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-categoryPath , .ecwid-productBrowser-categoryPath
+{
+	font:13px 'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body .ecwid a, html#ecwid_html body#ecwid_body .ecwid a:active, html#ecwid_html body#ecwid_body .ecwid a:visited , .ecwid a  , .ecwid a:active ,.ecwid a:visited
+{
+	font:13px 'PT Sans',sans-serif !important;
+}
+
+
+/* pop-up css */
+
+html#ecwid_html body#ecwid_body div.ecwid-popup , .ecwid-popup
+{
+	border: solid 4px #d2d2d2 !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-popup-headLabel , .ecwid-popup-headLabel
+
+{
+	font:30px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body label.ecwid-fieldLabel , .ecwid-fieldLabel
+{
+	font:14px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body button.gwt-Button, html#ecwid_html body#ecwid_body #wrapper button.gwt-Button , #ecwid_body button.gwt-Button ,  #wrapper button.gwt-Button
+{
+	
+	color:#fff !important;
+}
+
+
+
+html#ecwid_html body#ecwid_body div.ecwid-FormPopup-fieldWrapper , .ecwid-FormPopup-fieldWrapper {
+text-align: left !important;
+}
+/* End */
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-sku , .ecwid-productBrowser-sku
+{
+	font:13px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsTable-addToBagLink , .ecwid-productBrowser-productsTable-addToBagLink
+{
+	font:13px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productsTable-emptyStock , .ecwid-productBrowser-productsTable-emptyStock
+{
+	font:16px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid-productBrowser-productsList-productRow td , .ecwid-productBrowser-productsList-productRow td {
+vertical-align: middle !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-category , .ecwid-productBrowser-category
+{
+	padding-top:0px !important
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-details-inStockLabel, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-details-outOfStockLabel , .ecwid-productBrowser-details-inStockLabel , .ecwid-productBrowser-details-outOfStockLabel 
+{
+	
+	font:14px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body span.ecwid-productBrowser-details-optionRadioButton, html#ecwid_html body#ecwid_body span.ecwid-productBrowser-details-optionCheckbox , span.ecwid-productBrowser-details-optionRadioButton ,span.ecwid-productBrowser-details-optionCheckbox
+{
+	
+	font:13px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-details-qtyLabel, .ecwid-productBrowser-details-qtyLabel
+{
+	
+	font:14px 'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a:active, html#ecwid_html body#ecwid_body div.ecwid-productBrowser-productNameLink a:visited , .ecwid-productBrowser-productNameLink a , .ecwid-productBrowser-productNameLink a:active , .ecwid-productBrowser-productNameLink a:visited
+{
+	text-decoration:none !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-head , .ecwid-productBrowser-head
+{
+	
+	font:20px 'PT Sans',sans-serif !important;
+	
+}
+
+
+/*html#ecwid_html body#ecwid_body div.ecwid-ContinueShoppingButton-down, html#ecwid_html body#ecwid_body div.ecwid-ContinueShoppingButton-down-hovering, html#ecwid_html body#ecwid_body div.ecwid-ContinueShoppingButton-ie6-down, html#ecwid_html body#ecwid_body div.ecwid-ContinueShoppingButton-ie6-down-hovering
+{
+	background: url(../images/cart-button.png) no-repeat bottom center !important;
+
+}*/
+
+html#ecwid_html body#ecwid_body div.ecwid-form , .ecwid-form
+{
+	background-color:#ccc !important;
+}
+
+
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-details-inTheBag div , .ecwid-productBrowser-details-inTheBag div
+
+{
+	
+	font:18px 'PT Sans',sans-serif !important;
+	
+}
+
+
+
+/*********************CSS DONE BY TEJAS****************************/
+html#ecwid_html body#ecwid_body div.ecwid-form,
+html#ecwid_html body#ecwid_body div.ecwid-AddressForm-secureLockIcon,
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-ShippingAddress-top , div.ecwid-form ,  div.ecwid-AddressForm-secureLockIcon , div.ecwid-Checkout-ShippingAddress-top
+{
+	background:#cccccc !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-head , .ecwid-productBrowser-head
+{
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body table.ecwid-Checkout-blockTitle div.gwt-HTML,
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-blockTitle,
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-head ,  table.ecwid-Checkout-blockTitle div.gwt-HTML ,  div.ecwid-Checkout-blockTitle ,   div.ecwid-productBrowser-head
+{
+	font-size:20px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body button.gwt-Button , button.gwt-Button
+{
+	font-size:12px;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-note , div.ecwid-note
+{
+	font-size:11px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body input.gwt-TextBox,
+html#ecwid_html body#ecwid_body select.gwt-ListBox,
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-PasswordBlock-tip
+html#ecwid_html body#ecwid_body input.gwt-PasswordTextBox , input.gwt-TextBox , select.gwt-ListBox ,  div.ecwid-Checkout-PasswordBlock-tip , div.ecwid-Checkout-PasswordBlock-tip , input.gwt-PasswordTextBox
+{
+	font-size:15px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+.ecwid-PaymentInstructions-instructions.gwt-HTML span
+{
+	font-size:14px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link , div.ecwid-Checkout-BreadCrumbs-link
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-point-current , div.ecwid-Checkout-BreadCrumbs-point-current
+{
+	background:url(../images/checkout_point_current.png) no-repeat scroll 0 0 transparent !important;
+}
+
+/*****************done***************************/
+
+.gwt-HTML p
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+	font-weight:normal !important;
+}
+
+.ecwid-productBrowser-head
+{
+	top: -25px !important;
+	position: relative !important;
+}
+
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-optionsList , .ecwid-productBrowser-cart-optionsList
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body span.ecwid-productBrowser-cart-weight , span.ecwid-productBrowser-cart-weight
+
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-estimationNote , div.ecwid-productBrowser-cart-estimationNote
+
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-cart-totalLabel , div.ecwid-productBrowser-cart-totalLabel
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body table.ecwid-Checkout-blockTitle div.gwt-HTML , table.ecwid-Checkout-blockTitle div.gwt-HTML
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-blockTitle , div.ecwid-Checkout-blockTitle
+
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-minicart-caption , div.ecwid-minicart-caption
+
+{
+	font-size:13px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-results-topPanel div.ecwid-results-topPanel-itemsCountLabel-cell ,  div.ecwid-results-topPanel div.ecwid-results-topPanel-itemsCountLabel-cell
+{
+	float:left !important;
+}
+
+.ecwid-results-topPanel
+{
+	float: left !important;
+background: #eee !important;
+width: 98% !important;
+padding-left: 5px !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser-categoryPath , div.ecwid-productBrowser-categoryPath
+{
+padding-bottom: 7px !important;
+margin-top:-20px !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid-productBrowser-relatedProducts .ecwid-productBrowser-productNameLink , .ecwid-productBrowser-relatedProducts .ecwid-productBrowser-productNameLink
+
+{
+	font-size:12px !important;
+	font-family:'PT Sans',sans-serif !important;
+}
+
+.ecwid-ProductsList-content {
+float: left !important;
+}
+
+
+
+/* Responsive css start */
+
+
+@media screen and (max-width: 750px) {
+	/* Ecwid Componenet css  start*/
+
+.ecwid-ProductsList-content
+{
+	overflow:scroll !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid table .ecwid-productBrowser-innerTable , .ecwid table .ecwid-productBrowser-innerTable
+{
+	overflow:scroll !important;
+	/*float:left !important;
+	width:90% !important;*/
+	display: block !important;
+}
+
+html#ecwid_html body#ecwid_body .ecwid-productBrowser-innerTable , .ecwid-productBrowser-innerTable {
+overflow: scroll !important;
+display: block !important;
+width: 100% !important;
+}
+html#ecwid_html body#ecwid_body div.ecwid-AddressForm div.ecwid-fieldWrapper label.ecwid-fieldLabel ,  div.ecwid-AddressForm div.ecwid-fieldWrapper label.ecwid-fieldLabel {
+width: 100% !important;
+float: left !important;
+}
+
+/* Ecwid Componenet css  End*/
+
+	
+}
+
+
+
+

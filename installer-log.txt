@@ -1,0 +1,180 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 06:28:54
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	0.5.2
+PHP:		5.2.17 | SAPI: ucgi5
+SERVER:		IdeaWebServer/v0.80 (like Apache)
+DOC ROOT:	/www/stockhouse
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20140603_stockinstall_538e0dbd8185a9602140603180237
+REQUEST URL:	http://stockhouse.com.pl/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20140603_stockinstall_538e0dbd8185a9602140603180237_archive.zip
+SIZE:	37.63MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 0
+    [filename] => 
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  '/www/stockhouse/installer-data.sql'
+- WP-CONFIG: '/www/stockhouse/wp-config.php'
+
+ARCHIVE RUNTIME: 1.9491 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	5.5.37-35.0-log
+TIMEOUT:	5000
+MAXPACK:	8388608
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	
+QUERIES RAN:	53263
+
+wp_commentmeta: (157)
+wp_comments: (157)
+wp_duplicator_packages: (1)
+wp_eemail_newsletter: (1)
+wp_eemail_newsletter_app: (0)
+wp_eemail_newsletter_sub: (44)
+wp_layerslider: (2)
+wp_links: (0)
+wp_manufacturer: (1)
+wp_options: (5594)
+wp_postmeta: (25066)
+wp_posts: (3818)
+wp_term_relationships: (1403)
+wp_term_taxonomy: (692)
+wp_terms: (188)
+wp_usermeta: (13495)
+wp_users: (791)
+wp_woocommerce_attribute_taxonomies: (0)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_order_itemmeta: (1144)
+wp_woocommerce_order_items: (175)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (1)
+wp_woocommerce_termmeta: (157)
+wp_wpsc_also_bought: (0)
+wp_wpsc_cart_contents: (0)
+wp_wpsc_checkout_forms: (18)
+wp_wpsc_claimed_stock: (0)
+wp_wpsc_coupon_codes: (0)
+wp_wpsc_currency_list: (250)
+wp_wpsc_download_status: (0)
+wp_wpsc_meta: (6)
+wp_wpsc_product_rating: (0)
+wp_wpsc_purchase_logs: (0)
+wp_wpsc_region_tax: (64)
+wp_wpsc_submited_form_data: (0)
+Removed '3058' cache/transient rows
+
+SECTION RUNTIME: 8.5159 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 06:29:04 - TOTAL RUNTIME: 10.4707 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 06:30:12
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin2
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta~ (157)
+wp_comments~ (157)
+wp_duplicator_packages^ (0)
+wp_eemail_newsletter~ (1)
+wp_eemail_newsletter_app^ (0)
+wp_eemail_newsletter_sub~ (44)
+wp_layerslider~ (2)
+wp_links^ (0)
+wp_manufacturer~ (1)
+wp_options~ (2534)
+wp_postmeta~ (25066)
+wp_posts~ (3818)
+wp_term_relationships~ (1403)
+wp_term_taxonomy~ (692)
+wp_terms~ (188)
+wp_usermeta~ (13495)
+wp_users~ (791)
+wp_woocommerce_attribute_taxonomies^ (0)
+wp_woocommerce_downloadable_product_permissions^ (0)
+wp_woocommerce_order_itemmeta~ (1144)
+wp_woocommerce_order_items~ (175)
+wp_woocommerce_tax_rate_locations^ (0)
+wp_woocommerce_tax_rates~ (1)
+wp_woocommerce_termmeta~ (157)
+wp_wpsc_also_bought^ (0)
+wp_wpsc_cart_contents^ (0)
+wp_wpsc_checkout_forms~ (18)
+wp_wpsc_claimed_stock^ (0)
+wp_wpsc_coupon_codes^ (0)
+wp_wpsc_currency_list~ (250)
+wp_wpsc_download_status^ (0)
+wp_wpsc_meta~ (6)
+wp_wpsc_product_rating^ (0)
+wp_wpsc_purchase_logs^ (0)
+wp_wpsc_region_tax~ (64)
+wp_wpsc_submited_form_data^ (0)
+--------------------------------------
+SEARCH1:	'http://stockhouse.com.pl' 
+REPLACE1:	'http://stockhouse.com.pl' 
+SEARCH2:	'/home/bedstudio/ftp/stockhouse_kopia/' 
+REPLACE2:	'/www/stockhouse/' 
+SCANNED:	Tables:36 | Rows:50165 | Cells:281663 
+UPDATED:	Tables:0 | Rows:21 |Cells:21 
+ERRORS:		0 
+RUNTIME:	12.999900 sec
+
+********************************************************************************
+START FINAL CLEANUP: 06:30:25
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'stockhouse.com.pl' WHERE domain = 'stockhouse.com.pl'
+
+--------------------------------------
+WARNINGS
+--------------------------------------
+No Warnings Found
+
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 06:30:25 - TOTAL RUNTIME: 13.0181 sec.
+********************************************************************************

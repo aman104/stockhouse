@@ -1,0 +1,48 @@
+#accordion-container {
+
+}
+
+.accordion-header {
+	font-size: 16px;
+	background: #ebebeb;
+	margin: 5px 0 0 0;
+	padding: 5px 20px;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+	color: #666666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#accordion-container h2.active-header {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px ;
+	border-radius: 5px ;
+	background: url("../images/mins.png") no-repeat scroll 10px 7px transparent !important
+}
+
+#accordion-container h2.active-header:hover {
+	background:url("../images/mins.png") no-repeat scroll 10px 7px transparent !important
+}
+
+#accordion-container h2.inactive-header {
+	background: url("../images/plus.png") no-repeat scroll 10px 7px transparent !important
+}
+
+#accordion-container h2.inactive-header:hover {
+	background: url("../images/plus.png") no-repeat scroll 10px 7px transparent !important
+}
+
+.accordion-content {
+	display: none;
+	padding: 10px;
+	
+
+
+
+}
+h2.accordion-header {
+    padding: 7px 7px 7px 50px !important;
+	   font-size: 16px !important;
+}

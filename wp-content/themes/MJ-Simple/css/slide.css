@@ -1,0 +1,29 @@
+#gallery-wrap{ margin: 0px 0px 0 0px;
+overflow: hidden;
+width: 100%;
+position: relative;
+top:0;
+bottom:19px;}
+#gallery{position: relative; left: 0; top: 0;}
+#gallery li{float: left; margin: 0 20px 15px 0;}
+#gallery li a img{ height: 115px; width: 300px; padding:0; max-width:100%;
+margin-bottom:0;
+border-bottom:5px solid #A4A4A4;
+}
+
+#gallery-controls{ width:100%; display: block;
+text-align: right;
+position:relative;
+bottom:20px;}
+#gallery { width:1920px;}
+
+
+
+@media only screen and (min-width:480px) and (max-width:640px)
+{
+	#gallery li a img 
+	{
+    	width: 430px !important;	
+	}
+
+}

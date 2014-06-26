@@ -1,0 +1,23 @@
+/*
+Theme Name: Vizio
+Theme URI: http://vizio.splashingpixels.com
+Description: A multi-purpose ecommerce theme for just about anything you want to sell!
+Author: Splashing Pixels
+Author URI: http://splashingpixels.com
+Version: 1.1.3
+Tags: repsonsive, grid based layout, versatile, e-commerce
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*-----
+To add in your own CSS styles, visit the theme options general settings->custom CSS styles where you can enter your own custom styles.  Or you can also create a file user-styles.css within your theme folder and make your changes in there.
+----*/
+@import './css/theme-styles.css';
+.product .action-meta a.share-button {display:none !important;}
+.sp-quickview h2.product-title {font-weight:bold;}
+.social-share-buttons {display:none !important;}
+.single-product .product_meta .sku_wrapper {
+    display: none;
+}
