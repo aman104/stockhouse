@@ -169,6 +169,11 @@ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_
 		?>
 
 		<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
+		<?php 
+			if ( is_user_logged_in() ) {
+				echo '<br />'.get_post_meta( $product->id, 'Cena jednej sztuki', true, 25 );
+			}
+		?>
 	 	<input type="hidden" name="product_type" value="<?php echo esc_attr( $product->product_type ); ?>" />
 		<input type="hidden" name="product_id" value="<?php echo esc_attr( $product->id ); ?>" />
 
