@@ -1,3 +1,11 @@
+<div class="loga-slider"> <?php
+if ( is_front_page() ) {
+    // This is a homepage
+} else {
+echo do_shortcode('[sp-carousel id="5641"]');
+}
+?> </div>		
+
 		<?php do_action( 'sp_before_main_footer_container' ); ?>
 		<footer id="footer-wrap">
 			<?php get_sidebar( 'footer' ); ?>

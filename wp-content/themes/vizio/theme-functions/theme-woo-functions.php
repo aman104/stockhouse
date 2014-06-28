@@ -370,10 +370,10 @@ function sp_woo_single_product_social_share_html() {
 
 	if ( get_post_meta( $product->id, '_sp_page_show_share', true ) === 'on' ) {
 
-		$output .= '<div class="social-share clearfix">' . "\r\n";
-		$output .= '<h3>' . __( 'Share', 'sp-theme' ) . '</h3>' . "\r\n";
-		$output .= sp_social_media_share_buttons();
-		$output .= '</div><!--close .social-share-->' . "\r\n";
+		// $output .= '<div class="social-share clearfix">' . "\r\n";
+		// $output .= '<h3>' . __( 'Share', 'sp-theme' ) . '</h3>' . "\r\n";
+		// $output .= sp_social_media_share_buttons();
+		// $output .= '</div><!--close .social-share-->' . "\r\n";
 
 	}
 

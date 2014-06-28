@@ -111,11 +111,5 @@ global $page, $paged, $post;
 		</div><!--close .search-container-->			
 	</div><!--close .nav-wrap-->
 
-<div class="loga-slider"> <?php
-if ( is_front_page() ) {
-    // This is a homepage
-} else {
-echo do_shortcode('[sp-carousel id="5641"]');
-}
-?> </div>
+
 	<?php do_action( 'sp_after_main_nav_container' ); ?>
