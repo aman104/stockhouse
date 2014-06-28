@@ -1,0 +1,26 @@
+body {
+	color: #000;
+}
+
+.page-title {
+	float: left;
+}
+
+nav.woocommerce-breadcrumb {
+	margin-top: 5px;
+	float: left;
+	margin-left: 10px;
+}
+
+.woocommerce-ordering {
+	margin-bottom: 10px !important;
+}
+
+.grid-list-view-buttons {
+	display: none;
+}
+
+.product-image-link img {
+	width: 182px;
+	height: 142px;
+}
