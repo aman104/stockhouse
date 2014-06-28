@@ -24,3 +24,14 @@ nav.woocommerce-breadcrumb {
 	width: 182px;
 	height: 142px;
 }
+
+.account-nav2 ul {
+	background: #fff;
+	border: 0;
+}
+
+.account-nav2 ul li {
+	background: #fff !important;
+	border: 0 !important;
+	width: 170px !important;
+}

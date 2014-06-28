@@ -21,7 +21,7 @@ sp_woo_checkout_additional_info();
 <div class="row myaccount">
 	
 	<div class="<?php echo sp_column_css( '', '', '', '3' ); ?>">
-		<nav class="account-nav">
+		<nav class="account-nav2">
 			<h3 class="title-with-line"><span><?php _e( 'My Account', 'sp-theme' ); ?></span></h3>
 			<ul>
 				<?php echo apply_filters( 'sp_woo_myaccount_nav_orders', '<li><a href="#orders" title="' . esc_attr__( 'Recent Orders', 'sp-theme' ) . '">' . __( 'Recent Orders', 'sp-theme' ) . ' <i class="icon-angle-right" aria-hidden="true"></i></a></li>' ); ?>
