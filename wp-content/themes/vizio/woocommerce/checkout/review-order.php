@@ -135,6 +135,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<?php endif; ?>
 				<?php endif; ?>
 
+				<tr style="border-top: 1px solid #e2e2e2;">
+				
+					<th><?php echo 'Dostawa'; ?></th>
+					<td><?php echo wc_price( WC()->cart->shipping_total ); ?></td>
+				</tr>
+
 				<?php foreach ( WC()->cart->get_coupons( 'order' ) as $code => $coupon ) : ?>
 					<tr class="order-discount coupon-<?php echo esc_attr( $code ); ?>">
 						<th><?php _e( 'Coupon:', 'sp-theme' ); ?> <?php echo esc_html( $code ); ?></th>
@@ -158,7 +164,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	<div id="payment">
 		<?php if (WC()->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods">
+		<ul class="payment_methods methods" style="display: none">
 			<?php
 				$available_gateways = WC()->payment_gateways->get_available_payment_gateways();
 				if ( ! empty( $available_gateways ) ) {
