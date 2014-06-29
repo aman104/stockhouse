@@ -1917,13 +1917,7 @@ function sp_register_shortcode( $atts, $content = null ) {
 		$output .= '</div><!--close .form-group-->' . "\r\n";
 	}
 
-	$output .= '<div class="form-group">' . "\r\n";
-	$output .= '<label class="field-label control-label">' . __( 'Username', 'sp-theme' ) . ' <span class="required">*</span></label>' . "\r\n";
-	$output .= '<div class="controls">' . "\r\n";
-	$output .= '<input type="text" name="username" class="form-control" data-required="required" tabindex="3" />' . "\r\n";
-	$output .= '</div><!--close .controls-->' . "\r\n";
-	$output .= '<p class="alert"><button class="close" data-dismiss="alert" type="button">&times;</button><span class="msg"></span></p>' . "\r\n";
-	$output .= '</div><!--close .form-group-->' . "\r\n";
+
 
 	$output .= '<div class="form-group">' . "\r\n";
 	$output .= '<label class="field-label control-label">' . __( 'Email', 'sp-theme' ) . ' <span class="required">*</span></label>' . "\r\n";
@@ -1940,6 +1934,14 @@ function sp_register_shortcode( $atts, $content = null ) {
 	$output .= '</div><!--close .controls-->' . "\r\n";
 	$output .= '<p class="alert"><button class="close" data-dismiss="alert" type="button">&times;</button><span class="msg"></span></p>' . "\r\n";
 	$output .= '</div><!--close .form-group-->' . "\r\n";
+
+	$output .= '<div class="form-group">' . "\r\n";
+	$output .= '<label class="field-label control-label">' . __( 'Password', 'sp-theme' ) . ' <span class="required">*</span></label>' . "\r\n";
+	$output .= '<div class="controls">' . "\r\n";
+	$output .= '<input type="password" name="password" class="form-control" data-required="required" tabindex="3" />' . "\r\n";
+	$output .= '</div><!--close .controls-->' . "\r\n";
+	$output .= '<p class="alert"><button class="close" data-dismiss="alert" type="button">&times;</button><span class="msg"></span></p>' . "\r\n";
+	$output .= '</div><!--close .form-group-->' . "\r\n";	
 
 	$output .= '<div class="form-group">' . PHP_EOL;
 	$output .= '<label class="field-label control-label">' . __( 'Numer Telefonu', 'sp-theme' ) . ' <span class="required">*</span></label>' . PHP_EOL;
@@ -2029,7 +2031,7 @@ function sp_login_shortcode( $atts, $content = null ) {
 	$output .= '<form action="#" method="post">' . "\r\n";
 
 	$output .= '<div class="form-group">' . "\r\n";
-	$output .= '<label class="field-label control-label">' . __( 'Username', 'sp-theme' ) . '</label>' . "\r\n";
+	$output .= '<label class="field-label control-label">' . __( 'E-mail / Nazwa użytkownika', 'sp-theme' ) . '</label>' . "\r\n";
 	$output .= '<div class="controls">' . "\r\n";
 	$output .= '<input type="text" name="username" class="form-control" data-required="required" tabindex="1" />' . "\r\n";
 	$output .= '</div><!--close .controls-->' . "\r\n";
@@ -2123,7 +2125,7 @@ function sp_change_password_shortcode( $atts, $content = null ) {
 	$output .= '<h3 class="title"><i class="icon-locked"></i> ' . __( 'Change Password', 'sp-theme' ) . '</h3>' . "\r\n";
 
 	if ( $strong_password === 'true' )
-		$output .= '<p><em>' . __( 'Your password needs to be at least 8 characters long with a combination of upper and lower case letters, a number and a special character like "@, #, %, $".', 'sp-theme' ) . '</em></p>' . "\r\n";
+		//$output .= '<p><em>' . __( 'Your password needs to be at least 8 characters long with a combination of upper and lower case letters, a number and a special character like "@, #, %, $".', 'sp-theme' ) . '</em></p>' . "\r\n";
 
 	$output .= '</div><!--close .heading-->' . "\r\n";
 	$output .= '<form action="#" method="post">' . "\r\n";
@@ -2131,7 +2133,7 @@ function sp_change_password_shortcode( $atts, $content = null ) {
 	$output .= '<div class="form-group">' . "\r\n";
 	$output .= '<label class="field-label control-label">' . __( 'Current Password', 'sp-theme' ) . ' <span class="required">*</span></label>' . "\r\n";
 	$output .= '<div class="controls">' . "\r\n";
-	$output .= '<input type="text" name="current_password" class="form-control" data-required="required" tabindex="1" />' . "\r\n";
+	$output .= '<input type="password" name="current_password" class="form-control" data-required="required" tabindex="1" />' . "\r\n";
 	$output .= '</div><!--close .controls-->' . "\r\n";
 	$output .= '<p class="alert"><button class="close" data-dismiss="alert" type="button">&times;</button><span class="msg"></span></p>' . "\r\n";
 	$output .= '</div><!--close .form-group-->' . "\r\n";

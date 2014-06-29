@@ -203,6 +203,8 @@ function sp_submit_register_form_ajax() {
 	$error_msg = array();
 	$proceed = true;
 
+	$form_data['username'] = $form_data['email'];
+
 	if ( !isset( $form_data['regulamin'] )) {
 			$error_msg['regulamin'] = apply_filters( 'sp_sc_register_form_not_exist_regulamin', __( 'Akceptacja regulaminu jest wymagana do rejestracji!', 'sp-theme' ) );
 			$proceed = false;
@@ -280,7 +282,8 @@ function sp_submit_register_form_ajax() {
 
 	if ( $proceed ) {
 		// if all checks passed proceed to create user
-		$random_password = wp_generate_password();
+		//$random_password = wp_generate_password();
+		$random_password = $form_data['password'];
 		$user_id = wp_create_user( $form_data['username'], $random_password, $form_data['email'] );
 
 		// proceed if user created
@@ -581,57 +584,57 @@ function sp_submit_change_password_form_ajax() {
 	}
 
 	// check if password needs to be strong
-	if ( isset( $form_data['strong_password'] ) && $form_data['strong_password'] === 'true' ) {
-		$error_msg['new_password'] = '';
+	// if ( isset( $form_data['strong_password'] ) && $form_data['strong_password'] === 'true' ) {
+	// 	$error_msg['new_password'] = '';
 
-		if ( strlen( $form_data['new_password'] ) < 8 ) {
-			if ( ! empty( $error_msg['new_password'] ) )
-				$sep = '<br />';
-			else
-				$sep = '';
+	// 	if ( strlen( $form_data['new_password'] ) < 8 ) {
+	// 		if ( ! empty( $error_msg['new_password'] ) )
+	// 			$sep = '<br />';
+	// 		else
+	// 			$sep = '';
 
-			$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_length_msg', __( 'Sorry, your password needs to contain at least 8 characters.', 'sp-theme' ) );
+	// 		$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_length_msg', __( 'Sorry, your password needs to contain at least 8 characters.', 'sp-theme' ) );
 
-			$proceed = false;
-		}
+	// 		$proceed = false;
+	// 	}
 
-		if ( false == preg_match( '/[a-zA-Z]/', $form_data['new_password'] ) ) {
-			if ( ! empty( $error_msg['new_password'] ) )
-				$sep = '<br />';
-			else
-				$sep = '';
+	// 	if ( false == preg_match( '/[a-zA-Z]/', $form_data['new_password'] ) ) {
+	// 		if ( ! empty( $error_msg['new_password'] ) )
+	// 			$sep = '<br />';
+	// 		else
+	// 			$sep = '';
 
-			$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_uppercase_msg', __( 'Sorry, your password needs to contain both upper and lower case letters.', 'sp-theme' ) );
+	// 		$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_uppercase_msg', __( 'Sorry, your password needs to contain both upper and lower case letters.', 'sp-theme' ) );
 
-			$proceed = false;
-		}
+	// 		$proceed = false;
+	// 	}
 
-		if ( false == preg_match( '/[0-9]/', $form_data['new_password'] ) ) {
-			if ( ! empty( $error_msg['new_password'] ) )
-				$sep = '<br />';
-			else
-				$sep = '';
+	// 	if ( false == preg_match( '/[0-9]/', $form_data['new_password'] ) ) {
+	// 		if ( ! empty( $error_msg['new_password'] ) )
+	// 			$sep = '<br />';
+	// 		else
+	// 			$sep = '';
 
-			$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_numbers_msg', __( 'Sorry, your password needs to contain at least one number.', 'sp-theme' ) );
+	// 		$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_numbers_msg', __( 'Sorry, your password needs to contain at least one number.', 'sp-theme' ) );
 
-			$proceed = false;
-		}	
+	// 		$proceed = false;
+	// 	}	
 
-		if ( false == preg_match( '#[\~\`\!\@\#\$\%\^\&\*\(\)\_\-\+\=\{\}\[\]\|\:\;\<\>\.\?\/\\\\]+#', $form_data['new_password'] ) ) {
-			if ( ! empty( $error_msg['new_password'] ) )
-				$sep = '<br />';
-			else
-				$sep = '';
+	// 	if ( false == preg_match( '#[\~\`\!\@\#\$\%\^\&\*\(\)\_\-\+\=\{\}\[\]\|\:\;\<\>\.\?\/\\\\]+#', $form_data['new_password'] ) ) {
+	// 		if ( ! empty( $error_msg['new_password'] ) )
+	// 			$sep = '<br />';
+	// 		else
+	// 			$sep = '';
 
-			$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_numbers_msg', __( 'Sorry, your password needs to contain at least one special character such as "!, @, #, $".', 'sp-theme' ) );
+	// 		$error_msg['new_password'] .= $sep . apply_filters( 'sp_sc_change_password_form_strong_pass_numbers_msg', __( 'Sorry, your password needs to contain at least one special character such as "!, @, #, $".', 'sp-theme' ) );
 
-			$proceed = false;
-		}
+	// 		$proceed = false;
+	// 	}
 
-		// if no errors unset new password
-		if ( empty( $error_msg['new_password'] ) )
-			unset( $error_msg['new_password'] );				
-	}
+	// 	// if no errors unset new password
+	// 	if ( empty( $error_msg['new_password'] ) )
+	// 		unset( $error_msg['new_password'] );				
+	// }
 
 	// if new password is not confirmed
 	if( $form_data['new_password'] !== $form_data['confirm_password'] ) {
