@@ -11,7 +11,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 
 // adds the single product tabs to under summary
-add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 30 );
 
 // removes the single product excerpt
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
@@ -310,7 +310,7 @@ function sp_woo_single_product_action_meta() {
 
 	$output .= '</div><!--close .action-meta-->' . "\r\n";
 
-	echo $output;
+	//echo $output;
 }
 endif;
 
@@ -332,12 +332,12 @@ function sp_woo_product_meta_action_buttons_html( $product_id = '' ) {
 	// get saved settings
 	$social_media = get_post_meta( absint( $product_id ), '_sp_page_show_share', false );
 	$show_wishlist = get_post_meta( absint( $product_id ), '_sp_page_show_wishlist', false );
-	$show_compare = get_post_meta( absint( $product_id ), '_sp_page_show_compare', true );
+	//$show_compare = get_post_meta( absint( $product_id ), '_sp_page_show_compare', true );
 
 	$output = '';
 
-	if ( $show_compare === 'on' )
-		$output .= sp_compare_button_html( $product_id );
+	// if ( $show_compare === 'on' )
+	// 	$output .= sp_compare_button_html( $product_id );
 
 	if ( $show_wishlist === 'on' )
 		$output .= sp_wishlist_button_html( $product_id );
