@@ -35,3 +35,8 @@ nav.woocommerce-breadcrumb {
 	border: 0 !important;
 	width: 170px !important;
 }
+
+.order-actions a {
+	color: #fff !important;
+	background: rgb(112, 112, 112);
+}
