@@ -355,6 +355,7 @@ function sp_submit_login_form_ajax() {
 		exit;
 	}
 
+
 	parse_str( $_POST['form_items'], $form_data );
 
 	// sanitize the array db insert
@@ -487,7 +488,7 @@ function sp_submit_login_forgot_form_ajax() {
 		$message .= sprintf( __( 'Username: %s', 'sp-theme' ), $user_login ) . PHP_EOL . PHP_EOL;
 		$message .= __( 'If this was a mistake, just ignore this email and nothing will happen.', 'sp-theme' ) . PHP_EOL . PHP_EOL;
 		$message .= __( 'To reset your password, visit the following address:', 'sp-theme' ) . PHP_EOL . PHP_EOL;
-		$message .= '<' . home_url( "wp-login.php?action=rp&key=$key&login=" . rawurlencode( $user_login ), 'login' ) . '>' . PHP_EOL;
+		$message .= home_url( "wp-login.php?action=rp&key=$key&login=" . rawurlencode( $user_login ), 'login' ) . PHP_EOL;
 
 		if ( is_multisite() )
 			$blogname = $GLOBALS['current_site']->site_name;
