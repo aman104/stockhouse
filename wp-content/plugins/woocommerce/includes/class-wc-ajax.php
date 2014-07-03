@@ -127,17 +127,21 @@ class WC_AJAX {
 
 		check_ajax_referer( 'update-shipping-method', 'security' );
 
+		$m = array('flat_rate' => 'bacs', 'flat_rate:Za pobraniem' => 'cod');
+
 		if ( ! defined('WOOCOMMERCE_CART') ) define( 'WOOCOMMERCE_CART', true );
 
 		$chosen_shipping_methods = WC()->session->get( 'chosen_shipping_methods' );
-
+		
 		if ( isset( $_POST['shipping_method'] ) && is_array( $_POST['shipping_method'] ) ) {
 			foreach ( $_POST['shipping_method'] as $i => $value ) {
 				$chosen_shipping_methods[ $i ] = wc_clean( $value );
+				$chosen_payment_method = $m[wc_clean( $value )];
 			}
 		}
 
 		WC()->session->set( 'chosen_shipping_methods', $chosen_shipping_methods );
+		WC()->session->set( 'chosen_payment_method', $chosen_payment_method );
 
 		WC()->cart->calculate_totals();
 

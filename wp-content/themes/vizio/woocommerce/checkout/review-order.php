@@ -162,11 +162,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	
 	<?php do_action( 'woocommerce_review_order_before_payment' ); ?>
 
-	<div id="payment">
+	<div id="payment" style="display:none">
 		<?php if (WC()->cart->needs_payment()) : ?>
-		<ul class="payment_methods methods" style="display: none">
+		<ul class="payment_methods methods">
 			<?php
 				$available_gateways = WC()->payment_gateways->get_available_payment_gateways();
+
 				if ( ! empty( $available_gateways ) ) {
 
 					// Chosen Method
