@@ -539,7 +539,9 @@ function wp_authenticate($username, $password) {
 	if ( $user == null ) {
 		// TODO what should the error message be? (Or would these even happen?)
 		// Only needed if all authentication handlers fail to return anything.
-		$user = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.'));
+		echo json_encode( array( 'msg' => 'Podany login lub hasło jest niepoprawne', 'login' => false, 'redirect' => '' ) );
+		exit;
+		//$user = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.'));
 	}
 
 	$ignore_codes = array('empty_username', 'empty_password');
