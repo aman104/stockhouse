@@ -40,3 +40,7 @@ nav.woocommerce-breadcrumb {
 	color: #fff !important;
 	background: rgb(112, 112, 112);
 }
+
+.woocommerce-pagination {
+	margin-bottom: 20px;
+}
