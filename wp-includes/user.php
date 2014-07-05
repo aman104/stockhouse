@@ -116,6 +116,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 		return $user;
 	}
 
+
 	if ( empty($username) || empty($password) ) {
 		if ( is_wp_error( $user ) )
 			return $user;
@@ -131,10 +132,14 @@ function wp_authenticate_username_password($user, $username, $password) {
 		return $error;
 	}
 
+	
 	$user = get_user_by('login', $username);
 
-	if ( !$user )
-		return new WP_Error( 'invalid_username', sprintf( __( '<strong>ERROR</strong>: Invalid username. <a href="%s" title="Password Lost and Found">Lost your password</a>?' ), wp_lostpassword_url() ) );
+	if ( !$user ) {
+		echo json_encode( array( 'msg' => 'Podany login lub hasło jest niepoprawne', 'login' => false, 'redirect' => '' ) );
+		exit;
+		//return new WP_Error( 'invalid_username', sprintf( __( '<strong>ERROR</strong>: Invalid username. <a href="%s" title="Password Lost and Found">Lost your password</a>?' ), wp_lostpassword_url() ) );
+	}
 
 	/**
 	 * Filter whether the given user can be authenticated with the provided $password.
