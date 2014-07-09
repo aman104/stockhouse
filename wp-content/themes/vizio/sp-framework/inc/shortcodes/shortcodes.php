@@ -1944,9 +1944,9 @@ function sp_register_shortcode( $atts, $content = null ) {
 	$output .= '</div><!--close .form-group-->' . "\r\n";	
 
 	$output .= '<div class="form-group">' . PHP_EOL;
-	$output .= '<label class="field-label control-label">' . __( 'Numer Telefonu', 'sp-theme' ) . '</label>' . PHP_EOL;
+	$output .= '<label class="field-label control-label">' . __( 'Numer Telefonu', 'sp-theme' ) . '<span class="required">*</span></label>' . PHP_EOL;
 	$output .= '<div class="controls">' . PHP_EOL;
-	$output .= '<input type="text" name="phone" class="form-control" tabindex="5" />' . PHP_EOL;
+	$output .= '<input type="text" name="phone" class="form-control" data-required="required" tabindex="5" />' . PHP_EOL;
 	$output .= '</div><!--close .controls-->' . PHP_EOL;
 	$output .= '<p class="alert"><button class="close" data-dismiss="alert" type="button">&times;</button><span class="msg"></span></p>' . PHP_EOL;
 	$output .= '</div><!--close .form-group-->' . PHP_EOL;
