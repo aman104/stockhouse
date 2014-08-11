@@ -47,13 +47,13 @@ function sp_facebook_og_meta() {
 			} elseif ( is_single() || is_page() ) {
 
 				$post_image_link = sp_get_image( get_post_thumbnail_id( $post->ID, apply_filters( 'sp_fb_opengraph_post_image_width', 100 ), apply_filters( 'sp_fb_opengraph_post_image_height', 100 ), true ) );
-
+				$description = $post->post_content;
 				$metas .= '<meta property="og:title" content="' . esc_attr( get_the_title( $post->ID ) ) . '" />' . "\r\n";
 				$metas .= '<meta property="og:type" content="' . apply_filters( 'sp_fb_opengraph_type_for_articles', 'article' ) . '" />' . "\r\n";
 				$metas .= '<meta property="og:url" content="' . esc_attr( get_permalink( $post->ID ) ) . '" />' . "\r\n";
 				$metas .= '<meta property="og:image" content="' . esc_attr( $post_image_link['url'] ) . '" />' . "\r\n";
 				$metas .= '<meta property="og:site_name" content="' . esc_attr( get_bloginfo( 'name' ) ) . '" />' . "\r\n";
-				$metas .= '<meta property="og:description" content="' . esc_attr( strip_tags( $post->post_content ) ) . '" />' . "\r\n";   
+				$metas .= '<meta property="og:description" content="' . esc_attr( strip_tags( $description ) ) . '" />' . "\r\n";   
 			
 			// all others
 			} else {

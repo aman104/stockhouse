@@ -26,7 +26,22 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
 	<?php echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $cat_count, 'woocommerce' ) . ' ', '.</span>' ); ?>
 
-	<?php echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $tag_count, 'woocommerce' ) . ' ', '.</span>' ); ?>
+	<?php
+	$blog_tags = $product->get_tags( ', ', '' . _n( 'Tag:', 'Tags:', $tag_count, 'woocommerce' ) . ' ', '.' );?>
+    <span id="tagged_as_blog" class="tagged_as"></span>
+	
+	<script>
+      jQuery( document ).ready(function() {
+      jQuery( "#tagged_as_blog" ).append('<?php echo $blog_tags; ?>');
+      //$( "#tagged_as_blog" ).load( "block-tags.html" );
+      });
+    </script>
+	
+	<?php
+	/* archiuwm pola tagi:
+	echo $product->get_tags( ', ', '<span id="tagged_as_blog" class="tagged_as">' . _n( 'Tag:', 'Tags:', $tag_count, 'woocommerce' ) . ' ', '.</span>' ); 	
+	*/
+	?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 

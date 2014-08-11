@@ -25,6 +25,11 @@ nav.woocommerce-breadcrumb {
 	height: 142px;
 }
 
+.home .product-image-link img {
+	width: auto;
+	height: auto;
+}
+
 .account-nav2 ul {
 	background: #fff;
 	border: 0;

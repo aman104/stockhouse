@@ -31,6 +31,6 @@ echo do_shortcode('[sp-carousel id="5641"]');
 
 <?php echo sp_back_to_top_html(); ?>
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?><!--test-->
 </body>
 </html>

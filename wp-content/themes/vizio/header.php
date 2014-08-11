@@ -29,7 +29,7 @@ global $page, $paged, $post;
 				<div class="container">
 					<div class="row">
 						<div class="<?php echo sp_column_css( '', '', '', '5' ); ?>">
-							<div class="left-content"> Zadzwoń: +48 517 784 263<?php do_action( 'sp_top_bar_left_content' ); ?></div><!--close .left-content-->
+							<div class="left-content"> Zadzwoń: +48 517 784 263 &nbsp;&nbsp; <a style="color: #fff;" href="mailto:info@stockhouse.com.pl">info@stockhouse.com.pl</a><?php do_action( 'sp_top_bar_left_content' ); ?></div><!--close .left-content-->
 						</div><!--close .column-->
 
 						<div class="<?php echo sp_column_css( '', '', '', '4' ); ?>">
